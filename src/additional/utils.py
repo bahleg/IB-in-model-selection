@@ -5,6 +5,12 @@ from src.model.model import Model
 from src.additional.memory_pool import Pool
 
 
+def rnd(x):
+  return x>0
+
+def acc_loss(true, predicted):
+  return 1.0 - np.equal(true, predicted).mean()
+
 def sigmoid(x):
   return 1.0 / (1.0 + np.exp(-x))
 

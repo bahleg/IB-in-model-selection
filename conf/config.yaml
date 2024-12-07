@@ -6,8 +6,9 @@ model:
   max_predict_length: 10
 
 dataset:
-  nsamples: 1000
+  nsamples: 100
   nfeatures: 2
+  ndatasets: 10
 
 pool:
   nscalars: 4
